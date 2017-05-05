@@ -23,10 +23,11 @@ $('.search-btn').click(function(event) {
   //Fade in div after clicking black arrow.
   $.getJSON('https://swapi.co/api/people', {
     search: input
-  },function(data) {
+  },
+  function(data) {
     $('.name').html(data.results[0].name);
     $('.birthDate').html(data.results[0].birth_year);
     $('.gender').html(data.results[0].gender);
     console.log(data);
   });
-  });
+});
