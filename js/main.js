@@ -21,7 +21,7 @@ $('.search-btn').click(function(event) {
   event.preventDefault();
   var input = $('.search-input').val();
   //Fade in div after clicking black arrow.
-  $.getJSON('http://swapi.co/api/people', {
+  $.getJSON('https://swapi.co/api/people', {
     search: input
   },function(data) {
     $('.name').html(data.results[0].name);
