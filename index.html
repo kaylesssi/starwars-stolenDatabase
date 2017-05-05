@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Star Wars Rebel Base Console</title>
+		<!-- Plugins/libraries -->
+    <link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	</head>
+  <body>
+    <div id="logoIn" class="logo">
+      <img src="images/StarWarsAllianceLogo.jpeg" width="150px" height="150px" alt="StarWars-RebelLogo">
+    </div>
+    <br>
+
+    <div id="homepageIntro">
+      <h1>Welcome, please enter your name.</h1>
+      <form class="yourName">
+        <input class="nameInput" type="text">
+        <button id="nameInput-btn">Enter</button>
+      </form>
+    </div>
+
+<!--Hide then show this div after clicking 'enter'-->
+		<br>
+		<div class="welcomeIntro-hidden">
+			Welcome, <span class="nameInput"></span>
+			to the Rebel Alliance's Official Strategy Center.
+			<br>
+			<p>This Strategy Center serves as a communications and planning center of the Rebel Alliance on the fourth moon of Yavin.</p>
+			<p> * Use this stolen database wisely. *</p>
+
+			<div id="forwardArrow">
+				<div id="arrow" class="icon">
+					<!--Link to the third div-->
+					<a href="#searchSwapi">
+						<img src="images/left-blackArrow.png" width="50px" height="50px" alt="Forward Arrow">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="searchSwapi-hidden" id="searchSwapi">
+			<p> "Patience you must have, young padawan. And enter in the person that you seek." - Master Yoda </p>
+			<form class="searchAPI">
+				<input class="search-input" type="text">
+				<button class="search-btn">Search</button>
+				<div class="search-output"></div>
+				<br>
+				<div class="searchDisplay">
+					<div>Name:<span class="name"></span></div>
+					<div>Birthdate:<span class="birthDate"></span></div>
+					<div>Gender:<span class="gender"></span></div>
+				</div>
+			</form>
+		</div>
+
+<!--Hidden Text
+    <div id="hideaway">
+      <p>Click the arrows to continue!</p>
+    </div>
+-->
+
+    <!-- jQuery first -->
+    <script
+    src="http://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+    <!-- Your own code -->
+    <script src="js/swapi.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+<html>
