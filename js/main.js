@@ -27,6 +27,6 @@ $('.search-btn').click(function(event) {
     $('.name').html(data.results[0].name);
     $('.birthDate').html(data.results[0].birth_year);
     $('.gender').html(data.results[0].gender);
-    console.log(data)
+    console.log(data);
   });
   });
